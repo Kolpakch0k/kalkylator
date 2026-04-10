@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#121212">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚖️ Калькулятор ИМТ"
+        android:textSize="28sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Поле для роста -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ваш рост (см)"
+        android:textSize="18sp"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/inputHeight"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:inputType="numberDecimal"
+        android:hint="например: 170"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:textAlignment="center"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Поле для веса -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ваш вес (кг)"
+        android:textSize="18sp"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/inputWeight"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:inputType="numberDecimal"
+        android:hint="например: 70"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:textAlignment="center"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Кнопка Рассчитать -->
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:text="📊 РАССЧИТАТЬ"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Результат: число ИМТ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ваш ИМТ:"
+        android:textSize="18sp"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/bmiValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="56sp"
+        android:textColor="#FFEB3B"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Результат: описание -->
+    <TextView
+        android:id="@+id/bmiStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+</LinearLayout>
